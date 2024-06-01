@@ -1,5 +1,5 @@
-**_BLAST_
-**
+_BLAST_
+
 Developer, Game Designer: 
 - Henry Haner
 
