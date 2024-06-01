@@ -1,0 +1,138 @@
+
+body, input {
+    font-family: Pixelify Sans, Helvetica, Arial, Times;
+    background-color: black;
+    color: rgb(80, 219, 0);
+}
+
+/* button {
+  font-family: Pixelify Sans, Helvetica, Arial, Times;
+}
+
+input {
+  font-family: Pixelify Sans, Helvetica, Arial, Times;
+} */
+/* Main Containers */
+.outer-container {
+  height: 600px;
+  width: 500px;
+  background: black;
+  border: 10px double white;
+  position: relative;
+}
+.game-window {
+  height: 100%;
+  width: 300px;
+  background: black;
+  border-right: 3px solid white;
+  float: left;
+}
+.status-window {
+  height: 100%;
+  width: 197px;
+  background: black;
+  color: white;
+  float: right;
+  position: relative;
+}
+
+.game-over {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    height: 100%;
+    width: 300px;
+    float: left;
+    text-align: center;
+    color: white;
+    background-color: #222;
+    align-content: center;
+}
+
+.splash-screen {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    height: 100%;
+    width: 300px;
+    float: left;
+    text-align: center;
+    color: white;
+}
+
+#mute-checkbox {
+    transform: scale(1.5);
+}
+
+button {
+    background-color: rgb(80, 219, 0);
+    border-color: black;
+    border-width: medium;
+    border-style: double;
+    color: black;
+    font-family: Pixelify Sans, Helvetica, Arial, Times;
+}
+
+/* Game Objects */
+.ship {
+  top: 530px;
+  left: 122px;
+  position: relative;
+  display: inline-block;
+  z-index: 2
+}
+.rocket {
+  position: absolute;
+  z-index: 1;
+}
+.rocket img {
+  height: 40px;
+}
+.asteroid {
+  position: absolute;
+}
+
+.life {
+    position: relative;
+    float: right;
+}
+
+.life img{
+    height: 25px;
+    width: 25px;
+}
+
+.explosion-avatar {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+}
+
+#explosion-1 {
+  left: 0px;
+  top: -1px;
+}
+
+#explosion-2 {
+  left: 10px;
+  top: 8px;
+}
+
+#explosion-3 {
+  left: -10px;
+  top: 16px;
+}
+
+.shield-avatar {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    display: none;
+}
+
+.shield {
+    position: absolute;
+}

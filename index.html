@@ -1,0 +1,66 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>_blast_</title>
+	<!-- JS -->
+	<script type="text/javascript" src='scripts/jquery.min.js'></script>
+	<script type="text/javascript" src='scripts/page.js'></script>
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<title>Div Blaster</title>
+
+<!-- HTML -->
+<body>
+  <div class='outer-container'>
+    <div class='game-window'>
+      <div id='enterprise' class='ship'>
+        <img class='ship-avatar' src='img/Main Ship - Base - Full health.png' height='32px' width="36px"/>
+        <img class='explosion-avatar' id='explosion-1' src='img/explosion.gif' height='32px'/>
+        <img class='explosion-avatar' id='explosion-2' src='img/explosion.gif' height='32px'/>
+        <img class='explosion-avatar' id='explosion-3' src='img/explosion.gif' height='32px'/>
+        <img class='shield-avatar' src='img/Main Ship - Shields - Round Shield.gif' height='64px'/>
+      </div>
+    </div>
+
+    <div class='splash-screen'>
+        <h1>_blast_</h1>
+        <br/>
+        <p>Space: Fire Rocket</p>
+        <p>Arrow Keys (&#8592;,&#8593;,&#8594;,&#8595;): Move the Ship</p>
+        <button id='start-game-button' type="button">Start</button>
+    </div>
+
+    <div class='game-over' style="display: none;">
+      <h1>GAME OVER!</h1>
+      <h2>Your Score: </h2>
+      <h2 id='game-over-score'>0</h2>
+      <button id='back-button'>Go Back</button>
+    </div>
+
+    <div class='status-window' style='text-align: center'>
+      <h3>Welcome!</h3>
+      <hr>
+      <br>
+      <p>score:</p>
+      <h1 id='score-box'>0</h1>
+      <p>rate:</p>
+      <h1 id='rate-box'>0%</h1>
+      <button id='settings-panel-button'>Open Settings Panel</button>
+      <div class='settings-panel' style="display: none;">
+          <h5>Asteroid Spawning Rate (# per second)</h5>
+          <input id='spawn-rate-input' type="text" placeholder="Min. 0.2. Max. 4"></input>
+          <div>
+              <h4>Mute <input id="mute-checkbox" type="checkbox" checked/> </h4>
+          </div>
+          <button id='update-button'>UPDATE</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
